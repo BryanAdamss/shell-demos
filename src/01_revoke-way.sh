@@ -4,3 +4,7 @@
 # 运行其它二进制的程序也一样；直接写 xxx.sh，linux 系统会去 PATH 里寻找有没有叫 xxx.sh 的，而只有 /bin, /sbin, /usr/bin，/usr/sbin 等在 PATH 里，你的当前目录通常不在 PATH 里，所以写成 xxx.sh 是会找不到命令的，要用 ./xxx.sh 告诉系统说，就在当前目录找。
 
 echo "revoke way"
+
+# 也可以做为解释器的参数，例如
+# /bin/sh test.sh
+# /bin/php test.php
