@@ -12,9 +12,10 @@ arr2[20]="20"
 # 单个元素，使用${arrName[下标]}
 echo ${arr[0]}
 echo ${arr2[20]}
-# 所有元素，使用${arrName[@]}
+# 所有元素，使用${arrName[@]}或者${arrName[*]}
 echo ${arr[@]}
 echo ${arr2[@]}
+echo ${arr2[*]}
 
 # 数组长度
 echo ${#arr[@]}
